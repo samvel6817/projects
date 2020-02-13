@@ -1,0 +1,39 @@
+@media (max-width: 991px) {
+	.header_desc {
+		font-size: 15px;
+	}
+
+	.header_phone {
+		font-size: 16px;
+	}
+
+	.header_menu_li a {
+		font-size: 15px;
+	}
+}
+
+.burger-btn {
+    width: 24px;
+    height: 18px;
+    position: relative;
+}
+
+.burger-btn .line:first-child {
+    top: 0;
+}
+
+.burger-btn .line:nth-child(2n) {
+    margin: 8px 0;
+}
+
+.burger-btn .line:last-child {
+    bottom: 0;
+}
+
+.burger-btn .line {
+    height: 2px;
+    width: 100%;
+    border-radius: 1px;
+    background: #ff6734;
+    position: absolute;
+}
