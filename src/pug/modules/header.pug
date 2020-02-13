@@ -1,0 +1,43 @@
+section.header-section-bg
+    .owl-header.owl-carousel.owl-theme
+        .header-bg(style="background-image:url(img/header_bg_2.png)")
+        .header-bg(style="background-image:url(img/header_bg_1.png)")
+        .header-bg(style="background-image:url(img/header_bg_2.png)")
+        .header-bg(style="background-image:url(img/header_bg_1.png)")
+    .header-white_bg
+
+section.header-body.position-relative
+    .container
+        .row.justify-content-between
+            .col-lg-3.col-md-5.col-sm-12.d-flex.flex-md-column.flex-row.justify-content-between.justify-content-md-start.header-logo-block.align-items-center
+                .header-logo
+                    img(src="img/logo.png")
+                .header-nav
+                    .header-nav-btn.js-burger.js-burger-open
+                        span
+                    .header-nav-block
+                        +navItem
+            .col-lg-6.col-md-6.col-sm-12
+                .header-bg_red
+                    .header-number
+                        a(href="#") (8342) 31-82-31, 31-81-31
+                    .header-adress-text.d-flex.flex-column
+                        span г. Саранск, Александровское шоссе, 25А
+                        a.js-adress(href="javascript:;").d-flex.flex-column Адреса наших магазинов
+                        .adress-block
+                            span г. Саранск, Александровское шоссе, 25А
+                            span г. Саранск, Александровское шоссе, 25А
+                            span г. Саранск, Александровское шоссе, 25А
+                    .header-form-title Получите прайс-лист
+                form.form-ajax
+                    .header-form-input
+                        input(type="text" placeholder="Ваше имя" required)
+                    .header-form-input
+                        input(type="number" placeholder="Number" required)
+                    .header-form-input
+                        input(type="email" placeholder="E-mail" required)
+                    .header-form-check.d-flex.align-items-center
+                        input(type="checkbox" id="checked")
+                        label(for="checked") Я даю свое согласие на обработку своих персональных данных
+                    button.header-form-btn(type="submit") Отправить
+

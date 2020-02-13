@@ -1,0 +1,80 @@
+footer {
+  background: #252532;
+  section {
+    padding: 50px 0;
+  }
+}
+.footer {
+  &-logo {
+    @media (max-width: 567px) {
+      margin-bottom: 20px;
+    }
+  }
+  &-vk {
+    text-align: left;
+    @media (max-width: 567px) {
+      text-align: left;
+    }
+  }
+  &-number {
+    text-align: left;
+    font-weight: bold;
+    font-size: 20px;
+    line-height: 40px;
+    margin-bottom: 10px;
+    color: white;
+    @media (max-width: 567px) {
+      text-align: left;
+    }
+  }
+  &-shop {
+    &-item {
+      text-align: left;
+      font-size: 14px;
+      line-height: 30px;
+      margin-bottom: 10px;
+      color: white;
+      @media (max-width: 768px) {
+        text-align: left;
+      }
+      @media (max-width: 575px) {
+        text-align: left;
+      }
+      &-title {
+        text-align: left;
+        font-weight: bold;
+        font-size: 14px;
+        line-height: 30px;
+        margin-bottom: 10px;
+        color: white;
+        @media (max-width: 567px) {
+          text-align: left;
+        }
+      }
+    }
+  }
+  &-nav {
+    &-menu {
+      ul.header-nav-ul {
+        list-style: none;
+        padding: 0;
+        margin: 0;
+        display: flex;
+        flex-direction: column;
+        align-items: start;
+        li.header-nav-li {
+          margin-bottom: 15px;
+          a.header-nav-link {
+            text-decoration: none;
+            font-weight: normal;
+            span {
+              color: white;
+              text-align: left;
+              font-size: 16px;
+            }
+          }
+        }
+      }
+    }
+  }
+}

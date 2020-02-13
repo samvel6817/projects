@@ -1,0 +1,15 @@
+.container.popup-form
+    .row.justify-content-lg-end.justify-content-center
+        .col-12
+            .form-title Форма обраной <связ></связ>
+            form.d-flex.flex-column.align-items-center
+                .form-block
+                    input.form-input(placeholder="Ваше имя" type="text")
+                .form-block
+                    input.form-input(placeholder="Номер" type="number")
+                .form-block
+                    input.form-input(placeholder="E-mail" type="email")
+                .form-block.d-flex.align-items-center
+                    input(type="checkbox" id="data2")
+                    label.form-data(for="data2") Я даю свое согласие на обработку своих персональных данных
+                button.popup-btn Отправить

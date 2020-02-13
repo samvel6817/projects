@@ -1,0 +1,63 @@
+$container-max-widths: (
+        sm: 100%,
+        md: 100%,
+        lg: 100%,
+        xl: 1340px
+);
+.col-xs-five,
+.col-sm-five,
+.col-md-five,
+.col-lg-five {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+}
+
+.col-xs-five {
+  width: 100%;
+  float: left;
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+@media (min-width: 565px) {
+  .col-xs-five {
+    width: 75%;
+    float: left;
+    text-align: center;
+    margin-bottom: 30px;
+  }
+}
+@media (min-width: 768px) {
+  .col-sm-five {
+    width: calc(50% - 15px);
+    float: left;
+    text-align: center;
+    margin-bottom: 30px;
+  }
+}
+
+@media (min-width: 992px) {
+  .col-md-five {
+    width: calc(50% - 15px);
+    float: left;
+    text-align: center;
+    margin-bottom: 30px;
+  }
+}
+
+@media (min-width: 1200px) {
+  .col-lg-five {
+    width: 20%;
+    float: left;
+    text-align: center;
+  }
+}
+
+.block {
+  margin: 0 auto;
+  height: 80px;
+  width: 200px;
+  background: #C4C4C4;
+
+}

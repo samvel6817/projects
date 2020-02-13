@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+html(lang="ru")
+head
+    meta(charset="UTF-8")
+    meta( name='viewport', content='width=device-width, initial-scale=1')
+    title
+    link(type="text/css", href="main.css")
+    <script src="https://api-maps.yandex.ru/2.1/?apikey=<ad3dba3f-f5d2-4361-8e6d-de1148eb0272>&lang=ru_RU" type="text/javascript"></script>
+
+body
+    include modules/_mixin
+    #menu
+        include modules/burger
+    #panel
+        header
+            include modules/header
+        main
+            include modules/main
+        #map
+        footer
+            include modules/footer
+        #modal_popup
+            include modules/popup
+        #form
+            include modules/form
+
