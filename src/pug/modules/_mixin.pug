@@ -1,0 +1,343 @@
+-
+    var menu = [
+        {name: "Пицца", link: "#"},
+        {name: "Напитки", link: "#"},
+        {name: "Салаты", link: "#"},
+        {name: "Десерты", link: "#"},
+        {name: "Акции", link: "action.html"},
+        {name: "Доставка", link: "delivery.html"},
+        {name: "Контакты", link: "contacts.html"}
+    ];
+-
+    var headerText = [
+        {title: "Пицца в подарок", text: "купи две любые пиццы и получи третью бесплатно", bg: 'img/banner.png'},
+        {title: "Самвел", text: "купи две любые пиццы и получи третью бесплатно", bg: 'img/header-bg-2.png'},
+        {title: "Пицца в подарок", text: "купи две любые пиццы и получи третью бесплатно", bg: 'img/banner.png'},
+        {title: "Пицца в подарок", text: "купи две любые пиццы и получи третью бесплатно", bg: 'img/header-bg-2.png'}
+    ];
+-
+    var mainTitleBtn = [
+        {title: "Все", id: "1"},
+        {title: "с сыром", id: "2"},
+        {title: "с грибами", id: "3"},
+        {title: "острая", id: "4"},
+        {title: "label", id: "5"},
+        {title: "морепродукты", id: "6"},
+        {title: "курица", id: "7"}
+    ];
+-
+    var basketItems = [
+        {name: "Пепперони", text: "30 см, традиционное, двойной сыр", img: "img/basket_item.png", price: "500 руб", id: "81"},
+        {name: "Пепперони", text: "30 см, традиционное, двойной сыр", img: "img/basket_item.png", price: "500 руб",  id: "82"},
+        {name: "Пепперони", text: "30 см, традиционное, двойной сыр", img: "img/basket_item.png", price: "500 руб",  id: "83"},
+        {name: "Пепперони", text: "30 см, традиционное, двойной сыр", img: "img/basket_item.png", price: "500 руб",  id: "84"}
+    ];
+-
+    var pizzaBlock = [
+        {img: "img/invalid-name.jpg", title: "Веджетале", text: "Сливочный соус, сыр блю чиз, моцареллаи смесь сыров чеддер и пармезан", id_size: "size1", price1: "price1", price2: "price2", price3: "price3",  id_thin: "pizza_th_1", id_traditionally: "pizza_tr_1", id_size_25: "pizza_25_1", id_size_30: "pizza_30_1", id_size_35: "pizza_35_1"},
+        {img: "img/invalid-name.png", title: "Веджетале", text: "Сливочный соус, сыр блю чиз, моцареллаи смесь сыров чеддер и пармезан", id_size: "size2", price1:"price1", price2: "price2", price3: "price3",id_thin: "pizza_th_2", id_traditionally: "pizza_tr_2", id_size_25: "pizza_25_2", id_size_30: "pizza_30_2", id_size_35: "pizza_35_2"},
+        {img: "img/invalid-name.jpg", title: "Веджетале", text: "Сливочный соус, сыр блю чиз, моцареллаи смесь сыров чеддер и пармезан", id_size: "size3", price1:"price1", price2: "price2", price3: "price3",id_thin: "pizza_th_3", id_traditionally: "pizza_tr_3", id_size_25: "pizza_25_3", id_size_30: "pizza_30_3", id_size_35: "pizza_35_3"},
+        {img: "img/invalid-name.png", title: "Веджетале", text: "Сливочный соус, сыр блю чиз, моцареллаи смесь сыров чеддер и пармезан", id_size: "size4", price1:"price1", price2: "price2", price3: "price3",id_thin: "pizza_th_4", id_traditionally: "pizza_tr_4", id_size_25: "pizza_25_4", id_size_30: "pizza_30_4", id_size_35: "pizza_35_4"},
+        {img: "img/invalid-name.jpg", title: "Веджетале", text: "Сливочный соус, сыр блю чиз, моцареллаи смесь сыров чеддер и пармезан", id_size: "size5", price1:"price1", price2: "price2", price3: "price3",id_thin: "pizza_th_5", id_traditionally: "pizza_tr_5", id_size_25: "pizza_25_5", id_size_30: "pizza_30_5", id_size_35: "pizza_35_5"},
+        {img: "img/invalid-name.png", title: "Веджетале", text: "Сливочный соус, сыр блю чиз, моцареллаи смесь сыров чеддер и пармезан", id_size: "size6", price1:"price1", price2: "price2", price3: "price3",id_thin: "pizza_th_6", id_traditionally: "pizza_tr_6", id_size_25: "pizza_25_6", id_size_30: "pizza_30_6", id_size_35: "pizza_35_6"}
+    ];
+-
+    var drinkBlockItem = [
+        {img: "img/coca-cola.jpg", title: "Coca-Cola, 0,5 л", price: "85 &#8381;" },
+        {img: "img/juice.jpeg", title: "Сок, 1 л", price: "100 &#8381;" }
+    ];
+-
+    var salatBlockItem = [
+    {img: "img/salat.jpg", title: "Цезарь", price: "100 &#8381;" },
+    {img: "img/salat2.jpg", title: "Греческий", price: "150 &#8381;" }
+    ]
+mixin navItem
+    .col-lg-10.col-md-10.col-sm-9.d-none.d-sm-flex
+        ul.header-nav-ul()
+            for inner in menu
+                li.header-nav-li
+                    a.header-nav-link(href=inner.link)
+                        span.link=inner.name
+                    .header-nav-li-circle
+mixin navBurger
+    .col-6.justify-content-center.d-block.d-sm-none
+        .footer-contact-number.burger-dark
+            a(href="tel:+78342311191") 31-11-91
+    .col-sm-2.col-2.d-block.d-sm-none
+        .toggle-button.burger-btn
+            .line
+            .line
+            .line
+mixin navItemBurger
+       .col-12
+            ul.burger-nav-ul
+                for inner in menu
+                    li.burger-nav-li
+                        a.burger-nav-link(href=inner.link)
+                            span=inner.name
+
+mixin headerText
+    for item in headerText
+        section.header-background(style="background-image: url(" + item.bg +")")
+            .container
+                .row
+                    .col-lg-5
+                        .header-banner-title= item.title
+                        .header-banner-text= item.text
+mixin selectPizza
+    for item in mainTitleBtn
+        .main-select
+            input(type="checkbox" value= item.title id=item.id).main-select-pizza
+            label(for= item.id).main-select-title= item.title
+mixin footerMenu
+    ul.footer-nav-menu
+        for item in menu
+            li.footer-nav-li.col-lg-4.col-md-4.col-sm-6
+                a(href= item.link).footer-nav-link
+                    span= item.name
+mixin pizzaBlock
+    for  item in pizzaBlock
+        .col-lg-4.col-md-6.col-sm-6.main-block
+            .main-block-pizza
+                a(href="detailpage.html").main-block-pizza-img
+                    img(src= item.img title= item.name)
+            .main-block-info
+                .main-block-name
+                    a(href="detailpage.html")
+                        span=item.title
+                    span.main-info i
+                    .main-block-info-text
+                        .main-block-info-title Пищевая ценность на 100 г
+                        .main-block-info-flex
+                            .main-block-info-attribute Энерг. ценность
+                            .main-block-info-value 188,6 <span> ККАЛ </span>
+                        .main-block-info-flex
+                            .main-block-info-attribute Энерг. ценность
+                            .main-block-info-value 7.5 <span> ККАЛ </span>
+                        .main-block-info-flex
+                            .main-block-info-attribute Энерг. ценность
+                            .main-block-info-value 188,6 <span> г </span>
+                        .main-block-info-flex
+                            .main-block-info-attribute Энерг. ценность
+                            .main-block-info-value 188,6 <span> ККАЛ </span>
+                        .main-block-info-flex
+                            .main-block-info-value Масса нетто
+                            .main-block-info-value 300 <span> г </span>
+                .main-block-title= item.text
+                .main-block-size(role="tablist")
+                    .main-block-pizza-size
+                        input(type="radio" name= item.id_size  id= item.id_size_25 checked="checked").main-block-pizza-size-input
+                        label(for= item.id_size_25  href="#"+ item.price1 + item.id_size).main-block-pizza-size-label.active.show 1/2
+                    .main-block-pizza-size
+                        input(type="radio" name= item.id_size id= item.id_size_30).main-block-pizza-size-input
+                        label(for= item.id_size_30 href="#"+ item.price2 + item.id_size ).main-block-pizza-size-label 25
+                    .main-block-pizza-size
+                        input(type="radio" name= item.id_size id= item.id_size_35).main-block-pizza-size-input
+                        label(for= item.id_size_35  href="#"+ item.price3 + item.id_size).main-block-pizza-size-label 32
+                .main-block-price
+                    form().tab-pane-basket.active(id= item.price1 + item.id_size)
+                        .main-price
+                            span 376 &#8381;
+                        .main-price-block-basket
+                            .main-price-basket  в корзину
+                            .main-price-count.d-none
+                                span.main-count.js-count-minus -
+                                span.main-count-numbers
+                                    input(type="hidden" name="id" value= item.id_size_25)
+                                    input(type="number" readonly  class="js-count-number" value="1" name="quantity")
+                                span.main-count.js-count-plus +
+                    form().tab-pane-basket(id= item.price2 + item.id_size)
+                            .main-price
+                                span 500 &#8381;
+                            .main-price-block-basket
+                                .main-price-basket  в корзину
+                                .main-price-count.d-none
+                                    span.main-count.js-count-minus -
+                                    span.main-count-numbers
+                                        input(type="hidden" name="id" value= item.id_size_30)
+                                        input(type="number" readonly  class="js-count-number" value="1" name="quantity")
+                                    span.main-count.js-count-plus +
+                    form().tab-pane-basket(id= item.price3 + item.id_size)
+                        .main-price
+                            span 600 &#8381;
+                        .main-price-block-basket
+                            .main-price-basket  в корзину
+                            .main-price-count.d-none
+                                span.main-count.js-count-minus -
+                                span.main-count-numbers
+                                    input(type="hidden" name="id" value= item.id_size_35)
+                                    input( readonly  type="number" class="js-count-number" value="1" name="quantity")
+                                span.main-count.js-count-plus +
+mixin pizzaBlockDetail
+        .col-lg-6.col-md-6.d-flex.align-items-centre.detail-main-block
+            .main-block-pizza
+                a(href="detailpage.html").main-block-pizza-img
+                    img(src= pizzaBlock[1].img title= pizzaBlock[1].name)
+        .col-lg-5.col-md-6.d-flex.align-items-centre.detail-main-block
+            .main-block-info
+                .main-block-name.detail-title.flex-column.align-items-start
+                    span=pizzaBlock[1].title
+                    .detail-select-block.d-flex
+                        .main-select
+                            input(type="checkbox" value= mainTitleBtn[1].title id=mainTitleBtn[1].id).main-select-pizza
+                            label(for= mainTitleBtn[1].id).main-select-title= mainTitleBtn[1].title
+                        .main-select
+                            input(type="checkbox" value= mainTitleBtn[2].title id=mainTitleBtn[2].id).main-select-pizza
+                            label(for= mainTitleBtn[2].id).main-select-title= mainTitleBtn[2].title
+                    .main-block-title= pizzaBlock[1].text
+                    .detail-text.tab-pane-basket.active(class= pizzaBlock[1].price1 + pizzaBlock[1].id_size)
+                        .main-block-info-title Пищевая ценность на 100 г
+
+                        .main-block-info-flex
+                            .main-block-info-attribute Энерг. ценность
+                            .main-block-info-value 7.5 <span> ККАЛ </span>
+                        .main-block-info-flex
+                            .main-block-info-attribute Энерг. ценность
+                            .main-block-info-value 188,6 <span> г </span>
+                        .main-block-info-flex
+                            .main-block-info-attribute Энерг. ценность
+                            .main-block-info-value 188,6 <span> ККАЛ </span>
+                        .main-block-info-flex
+                            .main-block-info-value Масса нетто
+                            .main-block-info-value 300 <span> г </span>
+                    .detail-text.tab-pane-basket(class= pizzaBlock[1].price2 + pizzaBlock[1].id_size)
+                        .main-block-info-title Пищевая ценность на 100 г
+                        .main-block-info-flex
+                            .main-block-info-attribute Энерг. ценность
+                            .main-block-info-value 188,6 <span> ККАЛ </span>
+                        .main-block-info-flex
+                            .main-block-info-attribute Энерг. ценность
+                            .main-block-info-value 7.5 <span> ККАЛ </span>
+                        .main-block-info-flex
+                            .main-block-info-attribute Энерг. ценность
+                            .main-block-info-value 188,6 <span> г </span>
+
+                        .main-block-info-flex
+                            .main-block-info-value Масса нетто
+                            .main-block-info-value 300 <span> г </span>
+                    .detail-text.tab-pane-basket(class= pizzaBlock[1].price3 + pizzaBlock[1].id_size)
+                        .main-block-info-title Пищевая ценность на 100 г
+
+                        .main-block-info-flex
+                            .main-block-info-attribute Энерг. ценность
+                            .main-block-info-value 7.5 <span> ККАЛ </span>
+                        .main-block-info-flex
+                            .main-block-info-attribute Энерг. ценность
+                            .main-block-info-value 188,6 <span> г </span>
+                        .main-block-info-flex
+                            .main-block-info-attribute Энерг. ценность
+                            .main-block-info-value 188,6 <span> ККАЛ </span>
+                        .main-block-info-flex
+                            .main-block-info-value Масса нетто
+                            .main-block-info-value 300 <span> г </span>
+
+
+                .main-block-size
+                    .main-block-pizza-size
+                        input(type="radio" name= pizzaBlock[1].id_size  id= pizzaBlock[1].id_size_25 checked="checked").main-block-pizza-size-input
+                        label(for= pizzaBlock[1].id_size_25  href= pizzaBlock[1].price1 + pizzaBlock[1].id_size).main-block-pizza-size-label.active.show 1/2
+                    .main-block-pizza-size
+                        input(type="radio" name= pizzaBlock[1].id_size id= pizzaBlock[1].id_size_30).main-block-pizza-size-input
+                        label(for= pizzaBlock[1].id_size_30 href= pizzaBlock[1].price2 + pizzaBlock[1].id_size ).main-block-pizza-size-label 25
+                    .main-block-pizza-size
+                        input(type="radio" name= pizzaBlock[1].id_size id= pizzaBlock[1].id_size_35).main-block-pizza-size-input
+                        label(for= pizzaBlock[1].id_size_35  href= pizzaBlock[1].price3 + pizzaBlock[1].id_size).main-block-pizza-size-label 32
+                .main-block-price
+                    form().tab-pane-basket.active(class= pizzaBlock[1].price1 + pizzaBlock[1].id_size)
+                        .main-price
+                            span 376 &#8381;
+                        .main-price-block-basket
+                            .main-price-basket  в корзину
+                            .main-price-count.d-none
+                                span.main-count.js-count-minus -
+                                span.main-count-numbers
+                                    input(type="hidden" name="id" value= pizzaBlock[1].id_size_25)
+                                    input(type="number" readonly class="js-count-number" value="1" name="quantity")
+                                span.main-count.js-count-plus +
+                    form().tab-pane-basket(class= pizzaBlock[1].price2 + pizzaBlock[1].id_size)
+                        .main-price
+                            span 500 &#8381;
+                        .main-price-block-basket
+                            .main-price-basket  в корзину
+                            .main-price-count.d-none
+                                span.main-count.js-count-minus -
+                                span.main-count-numbers
+                                    input(type="hidden" name="id" value= pizzaBlock[1].id_size_30)
+                                    input(type="number" readonly class="js-count-number" value="1" name="quantity")
+                                span.main-count.js-count-plus +
+                    form().tab-pane-basket(class= pizzaBlock[1].price3 + pizzaBlock[1].id_size)
+                        .main-price
+                            span 600 &#8381;
+                        .main-price-block-basket
+                            .main-price-basket  в корзину
+                            .main-price-count.d-none
+                                span.main-count.js-count-minus -
+                                span.main-count-numbers
+                                    input(type="hidden" name="id" value= pizzaBlock[1].id_size_35)
+                                    input(type="number" readonly class="js-count-number" value="1" name="quantity")
+                                span.main-count.js-count-plus +
+mixin basket
+    .col-lg-3.col-md-4.justify-content-end.js-baskeet-block.d-none.d-lg-flex
+        a(href="basket.html")#basket.main-basket.d-none.d-md-flex
+            span.main-basket-text корзина
+            .main-basket-count 0
+mixin basketItem
+    for item in basketItems
+        .row.basket
+            .col-12
+                .basket-block_flex
+                    img(src= item.img)
+                    .basket-block-text
+                        .basket-block-title(data-id= item.id)= item.name
+                        .basket-block-descr.main-block-title= item.text
+                    form.main-price-count.basket-prise-count
+                        span.main-count.js-count-minus -
+                        span.main-count-numbers
+                            input(type="hidden" name="id" value= pizzaBlock[1].id_size_35)
+                            input(type="number" readonly  class="js-count-number" value="1" name="quantity")
+                        span.main-count.js-count-plus +
+                    .basket-block-price= item.price
+                    .basket-delete
+                        include ../../../dist/img/basket.svg
+
+mixin drinkBlock
+    for item in drinkBlockItem
+        form.detail-drink.d-flex
+            .detail-drink-img
+                img(src= item.img)
+            .detail-drink-text
+                span= item.title
+                <p>Объём - 1л</p>
+                <p>Вкус - яблоко</p>
+                .basket-block.d-flex.justify-content-between.align-items-center
+                    .d-flex.basket-main
+                        .basket-price
+                            span 376 &#8381;
+                        .main-price-block-basket
+                            .basket-item.main-price-basket  в корзину
+                            .main-price-count.d-none
+                                span.main-count.js-count-minus -
+                                span.main-count-numbers
+                                    input(type="hidden" name="id" value= pizzaBlock[1].id_size_25).js-baket-info
+                                    input(type="number" readonly class="js-count-number" value="1" name="quantity")
+                                span.main-count.js-count-plus +
+mixin salatBlock
+    for item in salatBlockItem
+        form.detail-drink.detail-salat.d-flex
+            .detail-drink-img
+                img(src= item.img)
+            .detail-drink-text
+                span= item.title
+                p Куриные грудки, сыр пармезан, сухарики из белого хлеба и анчоусы.
+                .basket-block.d-flex.justify-content-between.align-items-center
+                    form.d-flex.basket-main
+                        .basket-price
+                            span 376 &#8381;
+                        .main-price-block-basket
+                            .basket-item.main-price-basket  в корзину
+                            .main-price-count.d-none
+                                span.main-count.js-count-minus -
+                                span.main-count-numbers
+                                    input(type="hidden" name="id" value= pizzaBlock[1].id_size_25).js-baket-info
+                                    input(type="number" readonly class="js-count-number" value="1" name="quantity")
+                                span.main-count.js-count-plus +

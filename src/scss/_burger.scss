@@ -1,0 +1,123 @@
+.burger {
+  padding: 30px 15px;
+  &-logo  {
+    margin-left: 30px;
+  }
+  &-basket {
+    display: none;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+/*    left: calc(50% - 28.5px);*/
+    background: $orange;
+    padding: 12px 12px;
+    text-align: center;
+    z-index: 1000;
+    justify-content: space-between;
+    align-items: center;
+    svg {
+      width: 33px;
+      height: 33px;
+      path {
+        fill: white;
+      }
+    }
+    &-text {
+      font-family: "Code Pro", Arial;
+      font-size: 1.125rem;
+      font-weight: bold;
+      letter-spacing: normal;
+      color: #ffffff;
+      text-transform: uppercase;
+    }
+  }
+  &-contact {
+    padding: 30px 0 15px 30px;
+    .footer-contact,  .footer-adress  {
+      text-align: left;
+    }
+    .footer-network {
+      justify-content: flex-start;
+    }
+  }
+  &-border {
+    border-top: 1px solid white;
+    border-bottom: 1px solid white;
+  }
+  &-nav {
+    &-ul {
+      padding: 30px 0 15px 30px;
+      margin: 0;
+      list-style: none;
+      display: flex;
+      flex-direction: column;
+    }
+    &-li {
+      padding-bottom: 15px;
+    }
+    &-link {
+      &:hover {
+        text-decoration: none;
+      }
+      span {
+        font-size: 1.125rem;
+        font-weight: 500;
+        color: #fff;
+        font-style: normal;
+      }
+    }
+  }
+  &-btn {
+    width: 24px;
+    height: 18px;
+    position: relative;
+    .line {
+      height: 2px;
+      width: 100%;
+      border-radius: 1px;
+      background: $orange;
+      position: absolute;
+      &:first-child {
+        top: 0;
+      }
+      &:nth-child(2n) {
+        margin: 8px 0;
+      }
+      &:last-child {
+        bottom: 0;
+      }
+    }
+  }
+
+  body &-dark {
+    a {
+      color: #000000 !important;
+      text-align: center;
+      font-size: 2.275rem !important;
+
+      @media (max-width: 767px) {
+        font-size: 1.7rem !important;
+      }
+      @media (max-width: 380px) {
+        font-size: 1.5rem !important;
+      }
+    }
+
+  }
+}
+.slideout-open {
+  .line {
+    transition: all 0.3s ease-in-out;
+    &:first-child {
+      top: 50%;
+      transform: rotate(45deg);
+    }
+    &:nth-child(2n) {
+      display: none;
+    }
+    &:last-child {
+      top: 50%;
+        transform: rotate(-45deg);
+      }
+    }
+  }

@@ -1,0 +1,145 @@
+section.js-step.active
+    .container
+        .row
+            .col-5
+                .detail-title Корзина
+    .container
+        +basketItem
+        .row.justify-content-center.justify-content-md-end
+            .col-lg-3.col-md-4.col-sm-6.justify-content-end.d-flex.flex-column
+                .basket-summ
+                    span Сумма заказа:
+                    span.summ 1720
+                button(type="button").js-next-step.basket-order-btn Оформление заказа
+    .container
+        .row
+            .col-12
+                .detail-title Напитки
+        .detail-drink-slider
+            +drinkBlock
+        .row
+            .col-12
+                .detail-title Салаты
+        .detail-drink-slider
+            +salatBlock
+
+form.section.orderform.js-step
+    .container
+        .row.justify-content-center
+            .col-lg-8.col-md-10.col-12
+                .detail-title Оформление заказа
+        .row.justify-content-center
+            .col-lg-4.col-md-5.col-6
+                input(type="radio" name="delivery"  value="courier" id="delivery-courier" checked).d-none
+                label.order-delivery-select(data-id="#order" for="delivery-courier").active Доставка
+            .col-lg-4.col-md-5.col-6
+                input(type="radio" name="delivery" value="pickup" id="delivery-pickup").d-none
+                label.order-delivery-select(data-id="#pickup" for="delivery-pickup") Самовывоз
+        .row.justify-content-center#order.order-pane.active
+            .col-lg-8.col-md-10.col-12.d-flex.flex-wrap.justify-content-between
+                .order-block.order-field-50.d-flex.flex-column
+                    span Имя
+                    input( required type="name" name="name")
+                .order-block.order-field-50.d-flex.flex-column
+                    span Телефон
+                    input( required type="text" name="number" id="phone1")
+                .order-block.order-field-100.d-flex.flex-column
+                    span Улица
+                    input( required type="text" name="street")
+                .order-block.order-field-20.d-flex.flex-column
+                    span Дом
+                    input( required type="text" name="home")
+                .order-block.order-field-20.d-flex.flex-column
+                    span Квартира
+                    input( required type="number" name="apartment")
+                .order-block.order-field-20.d-flex.flex-column
+                    span Подъезд
+                    input( required type="number" name="entrance")
+                .order-block.order-field-20.d-flex.flex-column
+                    span Этаж
+                    input( required type="number" name="floor")
+                .order-block.order-field-100.d-flex.flex-column
+                    span Комментарий
+                    textarea(type="text" name="name")
+
+        .row.justify-content-center#pickup.order-pane
+            .col-lg-8.col-md-10.col-12.d-flex.flex-wrap.justify-content-between
+                .order-block.order-field-50.d-flex.flex-column
+                    span Имя
+                    input( required type="name" name="name")
+                .order-block.order-field-50.d-flex.flex-column
+                    span Телефон
+                    input( required type="text" name="number" id="phone1")
+
+    .container
+        .row.justify-content-center
+            .col-lg-8.col-md-4.col-sm-6.col-6.d-flex.justify-content-end
+                button(type="button").js-prev-step.basket-order-btn Назад
+                button(type="button").js-next-step.basket-order-btn Перейти к оплате
+form.orderform.js-step
+    .container
+        .row
+            .col-8
+                .detail-title Оплата
+        .row.justify-content-center
+            .col-lg-4.col-md-5.col-6.order-pay
+                input(type="radio" name="type_pay" id="pay_card" checked)
+                label(for="pay_card").order-delivery-select.active(data-id="#card") Картой курьеру
+            .col-lg-4.col-md-5.col-6.order-pay
+                input(type="radio" name="type_pay" id="pay_nall")
+                label(for="pay_nall").order-delivery-select(data-id="#nall") Наличными
+        .row.justify-content-center#nall.order-pane.order-pay-nall
+            .col-lg-6
+                .basket-pay-title
+                    span Ваш заказ!
+            .w-100
+            .col-lg-8.basket-pay-block.d-flex.flex-column
+                .basket-pay-order.d-flex.justify-content-between
+                    span Пипперони
+                    span 7 шт
+
+                .basket-pay-order.d-flex.justify-content-between
+                    span Пипперони
+                    span 7 шт
+
+                .basket-pay-order.d-flex.justify-content-between
+                    span Пипперони
+                    span 7 шт
+            .w-100
+            .col-lg-4.flex-column
+                .basket-summ
+                    span Сумма заказа:
+                    span.summ 1720
+                .d-flex
+                    span Сдача с
+                    input(type="number" name="sdacha")
+        .row.justify-content-center#card.order-pay-card.active.order-pane
+            .col-lg-6
+                .basket-pay-title
+                    span Ваш заказ!
+            .w-100
+            .col-lg-8.basket-pay-block.d-flex.flex-column
+                .basket-pay-order.d-flex.justify-content-between
+                    span Пипперони
+                    span 7 шт
+
+                .basket-pay-order.d-flex.justify-content-between
+                    span Пипперони
+                    span 7 шт
+
+                .basket-pay-order.d-flex.justify-content-between
+                    span Пипперони
+                    span 7 шт
+            .w-100
+            .col-lg-4.flex-column
+                .basket-summ
+                    span Сумма заказа:
+                    span.summ 1720
+                span Спасибо за заказ! Работник уже начал готовить!
+
+    .container
+        .row.justify-content-center
+            .col-lg-8.col-md-4.col-sm-6.col-6.d-flex.justify-content-end
+                button(type="button").js-prev-step.basket-order-btn Назад
+                button(type="button").js-next-step.basket-order-btn#orderFormBtn Заказать
+

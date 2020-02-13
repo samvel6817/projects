@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+html(lang="ru")
+head
+    meta(charset="UTF-8")
+    meta( name='viewport', content='width=device-width, initial-scale=1')
+    title Pizzaa
+    <script src="https://api-maps.yandex.ru/2.0-stable/?apikey=<6a80b97c-218a-4dfb-b566-de187d109298>&load=package.standard&lang=ru-RU" type="text/javascript"></script>
+    link(type="text/css", href="main.css")
+body
+    <script src="https://api-maps.yandex.ru/2.0-stable/?apikey=<6a80b97c-218a-4dfb-b566-de187d109298>&load=package.standard&lang=ru-RU" type="text/javascript"></script>
+    include ./modules/_mixin
+    include ./modules/_preloader
+
+    #menu
+        include ./modules/burger
+    #panel
+        header
+            include ./modules/header
+            include ./modules/headerSlider
+        main
+            include ./modules/mainUp
+            include ./modules/mainBlock
+        footer
+            include ./modules/footer

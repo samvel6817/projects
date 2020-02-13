@@ -1,0 +1,726 @@
+<!DOCTYPE html><!DOCTYPE html>
+<html lang="ru"></html>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Pizzaa</title><script src="https://api-maps.yandex.ru/2.0-stable/?apikey=<6a80b97c-218a-4dfb-b566-de187d109298>&load=package.standard&lang=ru-RU" type="text/javascript"></script>
+  <link type="text/css" href="main.css">
+<link href="main.css" rel="stylesheet"></head>
+<body><script src="https://api-maps.yandex.ru/2.0-stable/?apikey=<6a80b97c-218a-4dfb-b566-de187d109298>&load=package.standard&lang=ru-RU" type="text/javascript"></script>
+<div class="preloader">
+  <div class="wrapper center">
+    <div class="slice">
+      <div class="tomato"></div>
+      <div class="tomato"></div>
+      <div class="olive"></div>
+    </div>
+    <div class="slice">
+      <div class="tomato"></div>
+      <div class="tomato"></div>
+      <div class="olive"></div>
+    </div>
+    <div class="slice">
+      <div class="tomato"></div>
+      <div class="tomato"></div>
+      <div class="olive"></div>
+    </div>
+    <div class="slice">
+      <div class="tomato"></div>
+      <div class="tomato"></div>
+      <div class="olive"></div>
+    </div>
+    <div class="slice">
+      <div class="tomato"></div>
+      <div class="tomato"></div>
+      <div class="olive"></div>
+    </div>
+    <div class="slice">
+      <div class="tomato"></div>
+      <div class="tomato"></div>
+      <div class="olive"></div>
+    </div>
+  </div>
+</div>
+  <div id="menu">
+    <div class="container burger">
+      <div class="row justify-content-between align-items-center">
+        <div class="col-5">
+          <div class="burger-logo"><img src="img/03-white.png"></div>
+        </div>
+        <div class="col-2">
+          <div class="toggle-button burger-btn">
+            <div class="line"></div>
+            <div class="line"></div>
+            <div class="line"></div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="container burger-border">
+      <div class="row">
+          <div class="col-12">
+            <ul class="burger-nav-ul">
+              <li class="burger-nav-li"><a class="burger-nav-link" href="#"><span>Пицца</span></a></li>
+              <li class="burger-nav-li"><a class="burger-nav-link" href="#"><span>Напитки</span></a></li>
+              <li class="burger-nav-li"><a class="burger-nav-link" href="#"><span>Салаты</span></a></li>
+              <li class="burger-nav-li"><a class="burger-nav-link" href="#"><span>Десерты</span></a></li>
+              <li class="burger-nav-li"><a class="burger-nav-link" href="action.html"><span>Акции</span></a></li>
+              <li class="burger-nav-li"><a class="burger-nav-link" href="delivery.html"><span>Доставка</span></a></li>
+              <li class="burger-nav-li"><a class="burger-nav-link" href="contacts.html"><span>Контакты</span></a></li>
+            </ul>
+          </div>
+      </div>
+    </div>
+    <div class="container">
+      <div class="row">
+        <div class="col-12">
+          <div class="burger-contact">
+            <div class="footer-contact">
+              <div class="footer-contact-number"><a href="tel:+78342311191">31-11-91</a></div>
+              <div class="footer-contact-time">пн - чт:<span>9:00 - 22:00</span></div>
+              <div class="footer-contact-time">пт - вс:<span>10:00 - 23:00</span></div>
+            </div>
+            <div class="footer-network"><a href="#"><img src="img/icon-vk.svg"></a><a href="#"><img src="img/icon-inst.svg"></a></div>
+            <div class="footer-adress">г. Саранск,<span>переулок Кириллова, 2Б</span></div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div id="panel">
+    <header>
+      <nav>
+        <div class="d-none" id="js-basket-count">0</div>
+        <div class="container">
+          <div class="row justify-content-between align-items-center">
+            <div class="col-lg-2 col-md-2 col-sm-3 col-4">
+              <div class="header-nav-logo"><a href="index.html"><img src="img/03.png" alt="logo"></a></div>
+            </div>
+              <div class="col-lg-10 col-md-10 col-sm-9 d-none d-sm-flex">
+                <ul class="header-nav-ul">
+                  <li class="header-nav-li"><a class="header-nav-link" href="#"><span class="link">Пицца</span></a>
+                    <div class="header-nav-li-circle"></div>
+                  </li>
+                  <li class="header-nav-li"><a class="header-nav-link" href="#"><span class="link">Напитки</span></a>
+                    <div class="header-nav-li-circle"></div>
+                  </li>
+                  <li class="header-nav-li"><a class="header-nav-link" href="#"><span class="link">Салаты</span></a>
+                    <div class="header-nav-li-circle"></div>
+                  </li>
+                  <li class="header-nav-li"><a class="header-nav-link" href="#"><span class="link">Десерты</span></a>
+                    <div class="header-nav-li-circle"></div>
+                  </li>
+                  <li class="header-nav-li"><a class="header-nav-link" href="action.html"><span class="link">Акции</span></a>
+                    <div class="header-nav-li-circle"></div>
+                  </li>
+                  <li class="header-nav-li"><a class="header-nav-link" href="delivery.html"><span class="link">Доставка</span></a>
+                    <div class="header-nav-li-circle"></div>
+                  </li>
+                  <li class="header-nav-li"><a class="header-nav-link" href="contacts.html"><span class="link">Контакты</span></a>
+                    <div class="header-nav-li-circle"></div>
+                  </li>
+                </ul>
+              </div>
+              <div class="col-6 justify-content-center d-block d-sm-none">
+                <div class="footer-contact-number burger-dark"><a href="tel:+78342311191">31-11-91</a></div>
+              </div>
+              <div class="col-sm-2 col-2 d-block d-sm-none">
+                <div class="toggle-button burger-btn">
+                  <div class="line"></div>
+                  <div class="line"></div>
+                  <div class="line"></div>
+                </div>
+              </div>
+          </div>
+        </div>
+      </nav>
+      <div class="header-slider">
+          <section class="header-background" style="background-image: url(img/banner.png)">
+            <div class="container">
+              <div class="row">
+                <div class="col-lg-5">
+                  <div class="header-banner-title">Пицца в подарок</div>
+                  <div class="header-banner-text">купи две любые пиццы и получи третью бесплатно</div>
+                </div>
+              </div>
+            </div>
+          </section>
+          <section class="header-background" style="background-image: url(img/header-bg-2.png)">
+            <div class="container">
+              <div class="row">
+                <div class="col-lg-5">
+                  <div class="header-banner-title">Самвел</div>
+                  <div class="header-banner-text">купи две любые пиццы и получи третью бесплатно</div>
+                </div>
+              </div>
+            </div>
+          </section>
+          <section class="header-background" style="background-image: url(img/banner.png)">
+            <div class="container">
+              <div class="row">
+                <div class="col-lg-5">
+                  <div class="header-banner-title">Пицца в подарок</div>
+                  <div class="header-banner-text">купи две любые пиццы и получи третью бесплатно</div>
+                </div>
+              </div>
+            </div>
+          </section>
+          <section class="header-background" style="background-image: url(img/header-bg-2.png)">
+            <div class="container">
+              <div class="row">
+                <div class="col-lg-5">
+                  <div class="header-banner-title">Пицца в подарок</div>
+                  <div class="header-banner-text">купи две любые пиццы и получи третью бесплатно</div>
+                </div>
+              </div>
+            </div>
+          </section>
+      </div>
+    </header>
+    <main>
+      <section>
+        <div class="container">
+          <div class="row justify-content-between">
+            <div class="col-lg-7 d-flex flex-nowrap flex-sm-wrap select-pizza">
+                <div class="main-select">
+                  <input class="main-select-pizza" type="checkbox" value="Все" id="1">
+                  <label class="main-select-title" for="1">Все</label>
+                </div>
+                <div class="main-select">
+                  <input class="main-select-pizza" type="checkbox" value="с сыром" id="2">
+                  <label class="main-select-title" for="2">с сыром</label>
+                </div>
+                <div class="main-select">
+                  <input class="main-select-pizza" type="checkbox" value="с грибами" id="3">
+                  <label class="main-select-title" for="3">с грибами</label>
+                </div>
+                <div class="main-select">
+                  <input class="main-select-pizza" type="checkbox" value="острая" id="4">
+                  <label class="main-select-title" for="4">острая</label>
+                </div>
+                <div class="main-select">
+                  <input class="main-select-pizza" type="checkbox" value="label" id="5">
+                  <label class="main-select-title" for="5">label</label>
+                </div>
+                <div class="main-select">
+                  <input class="main-select-pizza" type="checkbox" value="морепродукты" id="6">
+                  <label class="main-select-title" for="6">морепродукты</label>
+                </div>
+                <div class="main-select">
+                  <input class="main-select-pizza" type="checkbox" value="курица" id="7">
+                  <label class="main-select-title" for="7">курица</label>
+                </div>
+            </div>
+              <div class="col-lg-3 col-md-4 justify-content-end js-baskeet-block d-none d-lg-flex"><a class="main-basket d-none d-md-flex" href="basket.html" id="basket"><span class="main-basket-text">корзина</span>
+                  <div class="main-basket-count">0</div></a></div>
+          </div>
+        </div>
+      </section>
+      <section>
+        <div class="container container-fluid-sm">
+          <div class="row align-items-stretch">
+              <div class="col-lg-4 col-md-6 col-sm-6 main-block">
+                <div class="main-block-pizza"><a class="main-block-pizza-img" href="detailpage.html"><img src="img/invalid-name.jpg"></a></div>
+                <div class="main-block-info">
+                  <div class="main-block-name"><a href="detailpage.html"><span>Веджетале</span></a><span class="main-info">i</span>
+                    <div class="main-block-info-text">
+                      <div class="main-block-info-title">Пищевая ценность на 100 г</div>
+                      <div class="main-block-info-flex">
+                        <div class="main-block-info-attribute">Энерг. ценность</div>
+                        <div class="main-block-info-value">188,6 <span> ККАЛ </span></div>
+                      </div>
+                      <div class="main-block-info-flex">
+                        <div class="main-block-info-attribute">Энерг. ценность</div>
+                        <div class="main-block-info-value">7.5 <span> ККАЛ </span></div>
+                      </div>
+                      <div class="main-block-info-flex">
+                        <div class="main-block-info-attribute">Энерг. ценность</div>
+                        <div class="main-block-info-value">188,6 <span> г </span></div>
+                      </div>
+                      <div class="main-block-info-flex">
+                        <div class="main-block-info-attribute">Энерг. ценность</div>
+                        <div class="main-block-info-value">188,6 <span> ККАЛ </span></div>
+                      </div>
+                      <div class="main-block-info-flex">
+                        <div class="main-block-info-value">Масса нетто</div>
+                        <div class="main-block-info-value">300 <span> г </span></div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="main-block-title">Сливочный соус, сыр блю чиз, моцареллаи смесь сыров чеддер и пармезан</div>
+                  <div class="main-block-size" role="tablist">
+                    <div class="main-block-pizza-size">
+                      <input class="main-block-pizza-size-input" type="radio" name="size1" id="pizza_25_1" checked="checked">
+                      <label class="main-block-pizza-size-label active show" for="pizza_25_1" href="#price1size1">1/2</label>
+                    </div>
+                    <div class="main-block-pizza-size">
+                      <input class="main-block-pizza-size-input" type="radio" name="size1" id="pizza_30_1">
+                      <label class="main-block-pizza-size-label" for="pizza_30_1" href="#price2size1">25</label>
+                    </div>
+                    <div class="main-block-pizza-size">
+                      <input class="main-block-pizza-size-input" type="radio" name="size1" id="pizza_35_1">
+                      <label class="main-block-pizza-size-label" for="pizza_35_1" href="#price3size1">32</label>
+                    </div>
+                  </div>
+                  <div class="main-block-price">
+                    <form class="tab-pane-basket active" id="price1size1">
+                      <div class="main-price"><span>376 &#8381;</span></div>
+                      <div class="main-price-block-basket">
+                        <div class="main-price-basket"> в корзину</div>
+                        <div class="main-price-count d-none"><span class="main-count js-count-minus">-</span><span class="main-count-numbers">
+                            <input type="hidden" name="id" value="pizza_25_1">
+                            <input class="js-count-number" type="number" readonly value="1" name="quantity"></span><span class="main-count js-count-plus">+</span></div>
+                      </div>
+                    </form>
+                    <form class="tab-pane-basket" id="price2size1">
+                      <div class="main-price"><span>500 &#8381;</span></div>
+                      <div class="main-price-block-basket">
+                        <div class="main-price-basket"> в корзину</div>
+                        <div class="main-price-count d-none"><span class="main-count js-count-minus">-</span><span class="main-count-numbers">
+                            <input type="hidden" name="id" value="pizza_30_1">
+                            <input class="js-count-number" type="number" readonly value="1" name="quantity"></span><span class="main-count js-count-plus">+</span></div>
+                      </div>
+                    </form>
+                    <form class="tab-pane-basket" id="price3size1">
+                      <div class="main-price"><span>600 &#8381;</span></div>
+                      <div class="main-price-block-basket">
+                        <div class="main-price-basket"> в корзину</div>
+                        <div class="main-price-count d-none"><span class="main-count js-count-minus">-</span><span class="main-count-numbers">
+                            <input type="hidden" name="id" value="pizza_35_1">
+                            <input class="js-count-number" readonly type="number" value="1" name="quantity"></span><span class="main-count js-count-plus">+</span></div>
+                      </div>
+                    </form>
+                  </div>
+                </div>
+              </div>
+              <div class="col-lg-4 col-md-6 col-sm-6 main-block">
+                <div class="main-block-pizza"><a class="main-block-pizza-img" href="detailpage.html"><img src="img/invalid-name.png"></a></div>
+                <div class="main-block-info">
+                  <div class="main-block-name"><a href="detailpage.html"><span>Веджетале</span></a><span class="main-info">i</span>
+                    <div class="main-block-info-text">
+                      <div class="main-block-info-title">Пищевая ценность на 100 г</div>
+                      <div class="main-block-info-flex">
+                        <div class="main-block-info-attribute">Энерг. ценность</div>
+                        <div class="main-block-info-value">188,6 <span> ККАЛ </span></div>
+                      </div>
+                      <div class="main-block-info-flex">
+                        <div class="main-block-info-attribute">Энерг. ценность</div>
+                        <div class="main-block-info-value">7.5 <span> ККАЛ </span></div>
+                      </div>
+                      <div class="main-block-info-flex">
+                        <div class="main-block-info-attribute">Энерг. ценность</div>
+                        <div class="main-block-info-value">188,6 <span> г </span></div>
+                      </div>
+                      <div class="main-block-info-flex">
+                        <div class="main-block-info-attribute">Энерг. ценность</div>
+                        <div class="main-block-info-value">188,6 <span> ККАЛ </span></div>
+                      </div>
+                      <div class="main-block-info-flex">
+                        <div class="main-block-info-value">Масса нетто</div>
+                        <div class="main-block-info-value">300 <span> г </span></div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="main-block-title">Сливочный соус, сыр блю чиз, моцареллаи смесь сыров чеддер и пармезан</div>
+                  <div class="main-block-size" role="tablist">
+                    <div class="main-block-pizza-size">
+                      <input class="main-block-pizza-size-input" type="radio" name="size2" id="pizza_25_2" checked="checked">
+                      <label class="main-block-pizza-size-label active show" for="pizza_25_2" href="#price1size2">1/2</label>
+                    </div>
+                    <div class="main-block-pizza-size">
+                      <input class="main-block-pizza-size-input" type="radio" name="size2" id="pizza_30_2">
+                      <label class="main-block-pizza-size-label" for="pizza_30_2" href="#price2size2">25</label>
+                    </div>
+                    <div class="main-block-pizza-size">
+                      <input class="main-block-pizza-size-input" type="radio" name="size2" id="pizza_35_2">
+                      <label class="main-block-pizza-size-label" for="pizza_35_2" href="#price3size2">32</label>
+                    </div>
+                  </div>
+                  <div class="main-block-price">
+                    <form class="tab-pane-basket active" id="price1size2">
+                      <div class="main-price"><span>376 &#8381;</span></div>
+                      <div class="main-price-block-basket">
+                        <div class="main-price-basket"> в корзину</div>
+                        <div class="main-price-count d-none"><span class="main-count js-count-minus">-</span><span class="main-count-numbers">
+                            <input type="hidden" name="id" value="pizza_25_2">
+                            <input class="js-count-number" type="number" readonly value="1" name="quantity"></span><span class="main-count js-count-plus">+</span></div>
+                      </div>
+                    </form>
+                    <form class="tab-pane-basket" id="price2size2">
+                      <div class="main-price"><span>500 &#8381;</span></div>
+                      <div class="main-price-block-basket">
+                        <div class="main-price-basket"> в корзину</div>
+                        <div class="main-price-count d-none"><span class="main-count js-count-minus">-</span><span class="main-count-numbers">
+                            <input type="hidden" name="id" value="pizza_30_2">
+                            <input class="js-count-number" type="number" readonly value="1" name="quantity"></span><span class="main-count js-count-plus">+</span></div>
+                      </div>
+                    </form>
+                    <form class="tab-pane-basket" id="price3size2">
+                      <div class="main-price"><span>600 &#8381;</span></div>
+                      <div class="main-price-block-basket">
+                        <div class="main-price-basket"> в корзину</div>
+                        <div class="main-price-count d-none"><span class="main-count js-count-minus">-</span><span class="main-count-numbers">
+                            <input type="hidden" name="id" value="pizza_35_2">
+                            <input class="js-count-number" readonly type="number" value="1" name="quantity"></span><span class="main-count js-count-plus">+</span></div>
+                      </div>
+                    </form>
+                  </div>
+                </div>
+              </div>
+              <div class="col-lg-4 col-md-6 col-sm-6 main-block">
+                <div class="main-block-pizza"><a class="main-block-pizza-img" href="detailpage.html"><img src="img/invalid-name.jpg"></a></div>
+                <div class="main-block-info">
+                  <div class="main-block-name"><a href="detailpage.html"><span>Веджетале</span></a><span class="main-info">i</span>
+                    <div class="main-block-info-text">
+                      <div class="main-block-info-title">Пищевая ценность на 100 г</div>
+                      <div class="main-block-info-flex">
+                        <div class="main-block-info-attribute">Энерг. ценность</div>
+                        <div class="main-block-info-value">188,6 <span> ККАЛ </span></div>
+                      </div>
+                      <div class="main-block-info-flex">
+                        <div class="main-block-info-attribute">Энерг. ценность</div>
+                        <div class="main-block-info-value">7.5 <span> ККАЛ </span></div>
+                      </div>
+                      <div class="main-block-info-flex">
+                        <div class="main-block-info-attribute">Энерг. ценность</div>
+                        <div class="main-block-info-value">188,6 <span> г </span></div>
+                      </div>
+                      <div class="main-block-info-flex">
+                        <div class="main-block-info-attribute">Энерг. ценность</div>
+                        <div class="main-block-info-value">188,6 <span> ККАЛ </span></div>
+                      </div>
+                      <div class="main-block-info-flex">
+                        <div class="main-block-info-value">Масса нетто</div>
+                        <div class="main-block-info-value">300 <span> г </span></div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="main-block-title">Сливочный соус, сыр блю чиз, моцареллаи смесь сыров чеддер и пармезан</div>
+                  <div class="main-block-size" role="tablist">
+                    <div class="main-block-pizza-size">
+                      <input class="main-block-pizza-size-input" type="radio" name="size3" id="pizza_25_3" checked="checked">
+                      <label class="main-block-pizza-size-label active show" for="pizza_25_3" href="#price1size3">1/2</label>
+                    </div>
+                    <div class="main-block-pizza-size">
+                      <input class="main-block-pizza-size-input" type="radio" name="size3" id="pizza_30_3">
+                      <label class="main-block-pizza-size-label" for="pizza_30_3" href="#price2size3">25</label>
+                    </div>
+                    <div class="main-block-pizza-size">
+                      <input class="main-block-pizza-size-input" type="radio" name="size3" id="pizza_35_3">
+                      <label class="main-block-pizza-size-label" for="pizza_35_3" href="#price3size3">32</label>
+                    </div>
+                  </div>
+                  <div class="main-block-price">
+                    <form class="tab-pane-basket active" id="price1size3">
+                      <div class="main-price"><span>376 &#8381;</span></div>
+                      <div class="main-price-block-basket">
+                        <div class="main-price-basket"> в корзину</div>
+                        <div class="main-price-count d-none"><span class="main-count js-count-minus">-</span><span class="main-count-numbers">
+                            <input type="hidden" name="id" value="pizza_25_3">
+                            <input class="js-count-number" type="number" readonly value="1" name="quantity"></span><span class="main-count js-count-plus">+</span></div>
+                      </div>
+                    </form>
+                    <form class="tab-pane-basket" id="price2size3">
+                      <div class="main-price"><span>500 &#8381;</span></div>
+                      <div class="main-price-block-basket">
+                        <div class="main-price-basket"> в корзину</div>
+                        <div class="main-price-count d-none"><span class="main-count js-count-minus">-</span><span class="main-count-numbers">
+                            <input type="hidden" name="id" value="pizza_30_3">
+                            <input class="js-count-number" type="number" readonly value="1" name="quantity"></span><span class="main-count js-count-plus">+</span></div>
+                      </div>
+                    </form>
+                    <form class="tab-pane-basket" id="price3size3">
+                      <div class="main-price"><span>600 &#8381;</span></div>
+                      <div class="main-price-block-basket">
+                        <div class="main-price-basket"> в корзину</div>
+                        <div class="main-price-count d-none"><span class="main-count js-count-minus">-</span><span class="main-count-numbers">
+                            <input type="hidden" name="id" value="pizza_35_3">
+                            <input class="js-count-number" readonly type="number" value="1" name="quantity"></span><span class="main-count js-count-plus">+</span></div>
+                      </div>
+                    </form>
+                  </div>
+                </div>
+              </div>
+              <div class="col-lg-4 col-md-6 col-sm-6 main-block">
+                <div class="main-block-pizza"><a class="main-block-pizza-img" href="detailpage.html"><img src="img/invalid-name.png"></a></div>
+                <div class="main-block-info">
+                  <div class="main-block-name"><a href="detailpage.html"><span>Веджетале</span></a><span class="main-info">i</span>
+                    <div class="main-block-info-text">
+                      <div class="main-block-info-title">Пищевая ценность на 100 г</div>
+                      <div class="main-block-info-flex">
+                        <div class="main-block-info-attribute">Энерг. ценность</div>
+                        <div class="main-block-info-value">188,6 <span> ККАЛ </span></div>
+                      </div>
+                      <div class="main-block-info-flex">
+                        <div class="main-block-info-attribute">Энерг. ценность</div>
+                        <div class="main-block-info-value">7.5 <span> ККАЛ </span></div>
+                      </div>
+                      <div class="main-block-info-flex">
+                        <div class="main-block-info-attribute">Энерг. ценность</div>
+                        <div class="main-block-info-value">188,6 <span> г </span></div>
+                      </div>
+                      <div class="main-block-info-flex">
+                        <div class="main-block-info-attribute">Энерг. ценность</div>
+                        <div class="main-block-info-value">188,6 <span> ККАЛ </span></div>
+                      </div>
+                      <div class="main-block-info-flex">
+                        <div class="main-block-info-value">Масса нетто</div>
+                        <div class="main-block-info-value">300 <span> г </span></div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="main-block-title">Сливочный соус, сыр блю чиз, моцареллаи смесь сыров чеддер и пармезан</div>
+                  <div class="main-block-size" role="tablist">
+                    <div class="main-block-pizza-size">
+                      <input class="main-block-pizza-size-input" type="radio" name="size4" id="pizza_25_4" checked="checked">
+                      <label class="main-block-pizza-size-label active show" for="pizza_25_4" href="#price1size4">1/2</label>
+                    </div>
+                    <div class="main-block-pizza-size">
+                      <input class="main-block-pizza-size-input" type="radio" name="size4" id="pizza_30_4">
+                      <label class="main-block-pizza-size-label" for="pizza_30_4" href="#price2size4">25</label>
+                    </div>
+                    <div class="main-block-pizza-size">
+                      <input class="main-block-pizza-size-input" type="radio" name="size4" id="pizza_35_4">
+                      <label class="main-block-pizza-size-label" for="pizza_35_4" href="#price3size4">32</label>
+                    </div>
+                  </div>
+                  <div class="main-block-price">
+                    <form class="tab-pane-basket active" id="price1size4">
+                      <div class="main-price"><span>376 &#8381;</span></div>
+                      <div class="main-price-block-basket">
+                        <div class="main-price-basket"> в корзину</div>
+                        <div class="main-price-count d-none"><span class="main-count js-count-minus">-</span><span class="main-count-numbers">
+                            <input type="hidden" name="id" value="pizza_25_4">
+                            <input class="js-count-number" type="number" readonly value="1" name="quantity"></span><span class="main-count js-count-plus">+</span></div>
+                      </div>
+                    </form>
+                    <form class="tab-pane-basket" id="price2size4">
+                      <div class="main-price"><span>500 &#8381;</span></div>
+                      <div class="main-price-block-basket">
+                        <div class="main-price-basket"> в корзину</div>
+                        <div class="main-price-count d-none"><span class="main-count js-count-minus">-</span><span class="main-count-numbers">
+                            <input type="hidden" name="id" value="pizza_30_4">
+                            <input class="js-count-number" type="number" readonly value="1" name="quantity"></span><span class="main-count js-count-plus">+</span></div>
+                      </div>
+                    </form>
+                    <form class="tab-pane-basket" id="price3size4">
+                      <div class="main-price"><span>600 &#8381;</span></div>
+                      <div class="main-price-block-basket">
+                        <div class="main-price-basket"> в корзину</div>
+                        <div class="main-price-count d-none"><span class="main-count js-count-minus">-</span><span class="main-count-numbers">
+                            <input type="hidden" name="id" value="pizza_35_4">
+                            <input class="js-count-number" readonly type="number" value="1" name="quantity"></span><span class="main-count js-count-plus">+</span></div>
+                      </div>
+                    </form>
+                  </div>
+                </div>
+              </div>
+              <div class="col-lg-4 col-md-6 col-sm-6 main-block">
+                <div class="main-block-pizza"><a class="main-block-pizza-img" href="detailpage.html"><img src="img/invalid-name.jpg"></a></div>
+                <div class="main-block-info">
+                  <div class="main-block-name"><a href="detailpage.html"><span>Веджетале</span></a><span class="main-info">i</span>
+                    <div class="main-block-info-text">
+                      <div class="main-block-info-title">Пищевая ценность на 100 г</div>
+                      <div class="main-block-info-flex">
+                        <div class="main-block-info-attribute">Энерг. ценность</div>
+                        <div class="main-block-info-value">188,6 <span> ККАЛ </span></div>
+                      </div>
+                      <div class="main-block-info-flex">
+                        <div class="main-block-info-attribute">Энерг. ценность</div>
+                        <div class="main-block-info-value">7.5 <span> ККАЛ </span></div>
+                      </div>
+                      <div class="main-block-info-flex">
+                        <div class="main-block-info-attribute">Энерг. ценность</div>
+                        <div class="main-block-info-value">188,6 <span> г </span></div>
+                      </div>
+                      <div class="main-block-info-flex">
+                        <div class="main-block-info-attribute">Энерг. ценность</div>
+                        <div class="main-block-info-value">188,6 <span> ККАЛ </span></div>
+                      </div>
+                      <div class="main-block-info-flex">
+                        <div class="main-block-info-value">Масса нетто</div>
+                        <div class="main-block-info-value">300 <span> г </span></div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="main-block-title">Сливочный соус, сыр блю чиз, моцареллаи смесь сыров чеддер и пармезан</div>
+                  <div class="main-block-size" role="tablist">
+                    <div class="main-block-pizza-size">
+                      <input class="main-block-pizza-size-input" type="radio" name="size5" id="pizza_25_5" checked="checked">
+                      <label class="main-block-pizza-size-label active show" for="pizza_25_5" href="#price1size5">1/2</label>
+                    </div>
+                    <div class="main-block-pizza-size">
+                      <input class="main-block-pizza-size-input" type="radio" name="size5" id="pizza_30_5">
+                      <label class="main-block-pizza-size-label" for="pizza_30_5" href="#price2size5">25</label>
+                    </div>
+                    <div class="main-block-pizza-size">
+                      <input class="main-block-pizza-size-input" type="radio" name="size5" id="pizza_35_5">
+                      <label class="main-block-pizza-size-label" for="pizza_35_5" href="#price3size5">32</label>
+                    </div>
+                  </div>
+                  <div class="main-block-price">
+                    <form class="tab-pane-basket active" id="price1size5">
+                      <div class="main-price"><span>376 &#8381;</span></div>
+                      <div class="main-price-block-basket">
+                        <div class="main-price-basket"> в корзину</div>
+                        <div class="main-price-count d-none"><span class="main-count js-count-minus">-</span><span class="main-count-numbers">
+                            <input type="hidden" name="id" value="pizza_25_5">
+                            <input class="js-count-number" type="number" readonly value="1" name="quantity"></span><span class="main-count js-count-plus">+</span></div>
+                      </div>
+                    </form>
+                    <form class="tab-pane-basket" id="price2size5">
+                      <div class="main-price"><span>500 &#8381;</span></div>
+                      <div class="main-price-block-basket">
+                        <div class="main-price-basket"> в корзину</div>
+                        <div class="main-price-count d-none"><span class="main-count js-count-minus">-</span><span class="main-count-numbers">
+                            <input type="hidden" name="id" value="pizza_30_5">
+                            <input class="js-count-number" type="number" readonly value="1" name="quantity"></span><span class="main-count js-count-plus">+</span></div>
+                      </div>
+                    </form>
+                    <form class="tab-pane-basket" id="price3size5">
+                      <div class="main-price"><span>600 &#8381;</span></div>
+                      <div class="main-price-block-basket">
+                        <div class="main-price-basket"> в корзину</div>
+                        <div class="main-price-count d-none"><span class="main-count js-count-minus">-</span><span class="main-count-numbers">
+                            <input type="hidden" name="id" value="pizza_35_5">
+                            <input class="js-count-number" readonly type="number" value="1" name="quantity"></span><span class="main-count js-count-plus">+</span></div>
+                      </div>
+                    </form>
+                  </div>
+                </div>
+              </div>
+              <div class="col-lg-4 col-md-6 col-sm-6 main-block">
+                <div class="main-block-pizza"><a class="main-block-pizza-img" href="detailpage.html"><img src="img/invalid-name.png"></a></div>
+                <div class="main-block-info">
+                  <div class="main-block-name"><a href="detailpage.html"><span>Веджетале</span></a><span class="main-info">i</span>
+                    <div class="main-block-info-text">
+                      <div class="main-block-info-title">Пищевая ценность на 100 г</div>
+                      <div class="main-block-info-flex">
+                        <div class="main-block-info-attribute">Энерг. ценность</div>
+                        <div class="main-block-info-value">188,6 <span> ККАЛ </span></div>
+                      </div>
+                      <div class="main-block-info-flex">
+                        <div class="main-block-info-attribute">Энерг. ценность</div>
+                        <div class="main-block-info-value">7.5 <span> ККАЛ </span></div>
+                      </div>
+                      <div class="main-block-info-flex">
+                        <div class="main-block-info-attribute">Энерг. ценность</div>
+                        <div class="main-block-info-value">188,6 <span> г </span></div>
+                      </div>
+                      <div class="main-block-info-flex">
+                        <div class="main-block-info-attribute">Энерг. ценность</div>
+                        <div class="main-block-info-value">188,6 <span> ККАЛ </span></div>
+                      </div>
+                      <div class="main-block-info-flex">
+                        <div class="main-block-info-value">Масса нетто</div>
+                        <div class="main-block-info-value">300 <span> г </span></div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="main-block-title">Сливочный соус, сыр блю чиз, моцареллаи смесь сыров чеддер и пармезан</div>
+                  <div class="main-block-size" role="tablist">
+                    <div class="main-block-pizza-size">
+                      <input class="main-block-pizza-size-input" type="radio" name="size6" id="pizza_25_6" checked="checked">
+                      <label class="main-block-pizza-size-label active show" for="pizza_25_6" href="#price1size6">1/2</label>
+                    </div>
+                    <div class="main-block-pizza-size">
+                      <input class="main-block-pizza-size-input" type="radio" name="size6" id="pizza_30_6">
+                      <label class="main-block-pizza-size-label" for="pizza_30_6" href="#price2size6">25</label>
+                    </div>
+                    <div class="main-block-pizza-size">
+                      <input class="main-block-pizza-size-input" type="radio" name="size6" id="pizza_35_6">
+                      <label class="main-block-pizza-size-label" for="pizza_35_6" href="#price3size6">32</label>
+                    </div>
+                  </div>
+                  <div class="main-block-price">
+                    <form class="tab-pane-basket active" id="price1size6">
+                      <div class="main-price"><span>376 &#8381;</span></div>
+                      <div class="main-price-block-basket">
+                        <div class="main-price-basket"> в корзину</div>
+                        <div class="main-price-count d-none"><span class="main-count js-count-minus">-</span><span class="main-count-numbers">
+                            <input type="hidden" name="id" value="pizza_25_6">
+                            <input class="js-count-number" type="number" readonly value="1" name="quantity"></span><span class="main-count js-count-plus">+</span></div>
+                      </div>
+                    </form>
+                    <form class="tab-pane-basket" id="price2size6">
+                      <div class="main-price"><span>500 &#8381;</span></div>
+                      <div class="main-price-block-basket">
+                        <div class="main-price-basket"> в корзину</div>
+                        <div class="main-price-count d-none"><span class="main-count js-count-minus">-</span><span class="main-count-numbers">
+                            <input type="hidden" name="id" value="pizza_30_6">
+                            <input class="js-count-number" type="number" readonly value="1" name="quantity"></span><span class="main-count js-count-plus">+</span></div>
+                      </div>
+                    </form>
+                    <form class="tab-pane-basket" id="price3size6">
+                      <div class="main-price"><span>600 &#8381;</span></div>
+                      <div class="main-price-block-basket">
+                        <div class="main-price-basket"> в корзину</div>
+                        <div class="main-price-count d-none"><span class="main-count js-count-minus">-</span><span class="main-count-numbers">
+                            <input type="hidden" name="id" value="pizza_35_6">
+                            <input class="js-count-number" readonly type="number" value="1" name="quantity"></span><span class="main-count js-count-plus">+</span></div>
+                      </div>
+                    </form>
+                  </div>
+                </div>
+              </div>
+          </div>
+        </div>
+      </section><a class="burger-basket d-md-none d-flex" href="basket.html"><svg height="512pt" viewBox="0 -26 512 512" width="512pt" xmlns="http://www.w3.org/2000/svg"><path d="m482 180h-11.171875l-14.660156-117.265625c-2.101563-16.835937-9.484375-32.332031-20.789063-43.632813-12.492187-12.496093-28.378906-19.101562-45.9375-19.101562h-88.445312c-5.523438 0-10 4.476562-10 10s4.476562 10 10 10h5.003906v30h-100v-30h4.996094c5.523437 0 10-4.476562 10-10s-4.476563-10-10-10h-88.4375c-17.558594 0-33.445313 6.605469-45.9375 19.101562-11.304688 11.300782-18.683594 26.796876-20.789063 43.632813l-14.660156 117.265625h-11.171875c-16.542969 0-30 13.457031-30 30v20c0 13.40625 8.839844 24.785156 21 28.617188l19.078125 152.621093c3.585937 28.710938 24.117187 48.761719 49.921875 48.761719h332c25.804688 0 46.332031-20.050781 49.921875-48.761719l19.078125-152.621093c12.160156-3.832032 21-15.210938 21-28.617188v-20c0-16.542969-13.457031-30-30-30zm-156-160h63.441406c12.140625 0 23.132813 4.578125 31.796875 13.242188 8.171875 8.171874 13.527344 19.527343 15.082031 31.96875l14.351563 114.789062h-30.210937l-13.902344-111.214844c-.71875-5.75-3.039063-10.84375-6.527344-14.332031-2.871094-2.871094-6.632812-4.453125-10.589844-4.453125h-63.441406zm-201.492188 180h55.472657l-27.734375 27.734375zm41.878907 41.878906 37.734375-37.734375 37.738281 37.734375-37.738281 37.734375zm61.878906-41.878906h55.46875l-27.734375 27.734375zm27.734375 56.019531 37.734375 37.738281-30.664063 30.664063c-3.898437 3.898437-10.242187 3.898437-14.140624 0l-30.667969-30.664063zm51.878906 23.59375-37.738281-37.734375 37.738281-37.734375 37.734375 37.734375zm51.875-51.878906-27.734375-27.734375h55.472657zm-248.058594-47.734375 13.589844-108.730469c.0625-.492187.148438-.914062.246094-1.269531h260.9375c.097656.355469.183594.777344.246094 1.265625l13.589844 108.734375zm-36.019531-114.789062c1.558594-12.441407 6.914063-23.796876 15.085938-31.96875 8.664062-8.664063 19.65625-13.242188 31.796875-13.242188h63.441406v30h-63.441406c-3.957032 0-7.714844 1.578125-10.585938 4.453125-3.492187 3.492187-5.8125 8.582031-6.53125 14.332031l-13.902344 111.214844h-30.210937zm-55.675781 144.789062c0-5.515625 4.484375-10 10-10h19.996094.019531.019531 46.191406l40 40h-106.226562c-5.515625 0-10-4.488281-10-10zm432.078125 198.757812c-1.882813 15.046876-12.097656 31.242188-30.078125 31.242188h-332c-17.980469 0-28.195312-16.195312-30.078125-31.242188l-18.59375-148.757812h114.894531l78.5625 78.5625c5.851563 5.847656 13.53125 8.773438 21.214844 8.773438 7.679688 0 15.363281-2.925782 21.210938-8.773438l37.734374-37.730469c0-.003906 0-.003906.003907-.003906 0-.003906.003906-.003906.003906-.007813l40.824219-40.820312h114.894531zm39.921875-178.757812c0 5.511719-4.484375 10-10 10h-106.222656l40-40h46.1875.023437.015625 19.996094c5.515625 0 10 4.484375 10 10zm0 0"/><path d="m422 400h-54.996094c-5.523437 0-10 4.476562-10 10 0 5.519531 4.476563 10 10 10h54.996094c5.523438 0 10-4.480469 10-10 0-5.523438-4.476562-10-10-10zm0 0"/><path d="m322.007812 400h-.007812c-5.523438 0-9.996094 4.476562-9.996094 10 0 5.519531 4.480469 10 10.003906 10 5.523438 0 10-4.480469 10-10 0-5.523438-4.476562-10-10-10zm0 0"/><path d="m256 20c5.523438 0 10-4.476562 10-10s-4.476562-10-10-10h-.007812c-5.523438 0-9.996094 4.476562-9.996094 10s4.480468 10 10.003906 10zm0 0"/></svg>
+        <div class="main-basket-count">Ваша корзина пуста!</div></a>
+    </main>
+    <footer>
+      <div class="footer-action">
+        <div class="container">
+          <div class="row justify-content-between">
+            <div class="col-lg-8 d-flex align-items-center">
+              <div class="footer-action-block"><img src="img/gift.svg" alt="prise">
+                <div class="footer-action-text">Получи третью пиццу в подарок при первом заказе на сайте!</div>
+              </div>
+            </div>
+            <div class="col-lg-2 d-flex align-items-center justify-content-end"><a class="footer-action-link" href="#">Заказать</a></div>
+          </div>
+        </div>
+      </div>
+      <div class="footer-block">
+        <div class="container">
+          <div class="row justify-content-lg-between align-items-center justify-content-center">
+            <div class="col-lg-2 col-md-6 col-sm-12">
+              <div class="footer-img"><img src="img/group-15.svg"></div>
+            </div>
+            <div class="col-lg-4 col-md-6 d-none d-md-flex">
+              <div class="footer-menu">
+                  <ul class="footer-nav-menu">
+                    <li class="footer-nav-li col-lg-4 col-md-4 col-sm-6"><a class="footer-nav-link" href="#"><span>Пицца</span></a></li>
+                    <li class="footer-nav-li col-lg-4 col-md-4 col-sm-6"><a class="footer-nav-link" href="#"><span>Напитки</span></a></li>
+                    <li class="footer-nav-li col-lg-4 col-md-4 col-sm-6"><a class="footer-nav-link" href="#"><span>Салаты</span></a></li>
+                    <li class="footer-nav-li col-lg-4 col-md-4 col-sm-6"><a class="footer-nav-link" href="#"><span>Десерты</span></a></li>
+                    <li class="footer-nav-li col-lg-4 col-md-4 col-sm-6"><a class="footer-nav-link" href="action.html"><span>Акции</span></a></li>
+                    <li class="footer-nav-li col-lg-4 col-md-4 col-sm-6"><a class="footer-nav-link" href="delivery.html"><span>Доставка</span></a></li>
+                    <li class="footer-nav-li col-lg-4 col-md-4 col-sm-6"><a class="footer-nav-link" href="contacts.html"><span>Контакты</span></a></li>
+                  </ul>
+              </div>
+            </div>
+            <div class="col-lg-3 col-md-6">
+              <div class="footer-contact">
+                <div class="footer-contact-number"><a href="tel:+78342311191">31-11-91</a></div>
+                <div class="footer-contact-time">пн - чт:<span> 9:00 - 22:00</span></div>
+                <div class="footer-contact-time">пт - вс:<span> 10:00 - 23:00</span></div>
+              </div>
+            </div>
+            <div class="col-lg-3 col-md-6">
+              <div class="footer-network"><a href="#"><img src="img/icon-vk.svg"></a><a href="#"><img src="img/icon-inst.svg"></a></div>
+              <div class="footer-adress">г. Саранск,<span>переулокКириллова, 2Б</span></div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="arrow-up"><svg id="Layer_1" height="512" viewBox="0 0 128 128" width="512" xmlns="http://www.w3.org/2000/svg" data-name="Layer 1">
+    <path fill="#fff"  d="m107.163 91.6a1.734 1.734 0 0 0 -.172-.35c-5.463-11.108-17.01-34.194-41.428-82.541a1.751 1.751 0 0 0 -3.125 0c-24.419 48.349-35.966 71.435-41.429 82.543a1.746 1.746 0 0 0 -.172.35c-4.737 9.631-4.737 9.943-4.737 10.198 0 8.135 22.552 18.454 47.9 18.454s47.9-10.319 47.9-18.454c0-.255 0-.567-4.737-10.2zm-38.093-68.168c2.323 4.607 4.872 9.664 7.522 14.928a9.609 9.609 0 0 1 -7.522-14.928zm-5.07-10.049 3.322 6.583a13.138 13.138 0 0 0 9.787 21.92c.408 0 .818-.022 1.228-.061 9.1 18.088 19.046 37.89 24.937 49.769-7.672 4.9-22.316 9.584-39.274 9.584s-31.6-4.687-39.274-9.584c6.081-12.262 16.474-32.965 25.813-51.51a5.325 5.325 0 1 0 4.988-7.167 5.258 5.258 0 0 0 -1.5.241c3.762-7.467 7.219-14.321 9.973-19.775zm-10.306 24.867a1.833 1.833 0 1 1 1.833 1.833 1.835 1.835 0 0 1 -1.833-1.833zm10.306 78.5c-25.148 0-43.662-10.088-44.376-14.686.39-.888 1.656-3.5 3.542-7.316 8.235 5.11 23.43 9.93 40.834 9.93s32.6-4.82 40.834-9.93c1.885 3.82 3.152 6.428 3.542 7.316-.714 4.598-19.228 14.686-44.376 14.686z"/>
+    <path fill="#fff" d="m46.333 71.919a8.917 8.917 0 1 0 8.917 8.916 8.927 8.927 0 0 0 -8.917-8.916zm0 14.333a5.417 5.417 0 1 1 5.417-5.417 5.422 5.422 0 0 1 -5.417 5.417z"/>
+    <path fill="#fff" d="m58.968 52.412a1.752 1.752 0 0 0 -.4 1.662l3.674 13.034a1.751 1.751 0 0 0 2.971.713l9.611-10.408a1.75 1.75 0 0 0 -.947-2.9l-13.284-2.63a1.747 1.747 0 0 0 -1.625.529zm11.164 4.924-5.368 5.813-2.052-7.28z"/>
+    <path fill="#fff" d="m72.909 85.87 9.319 9.32a1.749 1.749 0 0 0 2.475 0l9.32-9.32a1.749 1.749 0 0 0 0-2.475l-9.32-9.32a1.8 1.8 0 0 0 -2.475 0l-9.319 9.325a1.749 1.749 0 0 0 0 2.47zm10.557-8.083 6.846 6.846-6.846 6.846-6.845-6.846z"/>
+</svg>
+      </div>
+    </footer>
+  </div>
+<script type="text/javascript" src="bundle.js"></script></body>

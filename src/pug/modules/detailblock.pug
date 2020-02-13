@@ -1,0 +1,23 @@
+section
+    .container
+        .row.justify-content-end
+            +basket
+    .container
+        .row
+            +pizzaBlockDetail
+
+    .container
+        .row
+            .col-12
+                .detail-title Напитки
+        .detail-drink-slider
+            +drinkBlock
+        .row
+            .col-12
+                .detail-title Салаты
+        .detail-drink-slider
+            +salatBlock
+.burger-basket.d-md-none.d-flex
+    a(href="basket.html")
+        include ../../img/picnic-basket.svg
+    .main-basket-count Ваша корзина пуста!
