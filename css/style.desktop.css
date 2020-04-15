@@ -1,0 +1,877 @@
+* {
+	box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    text-rendering: optimizeLegibility;
+	-webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;
+	outline: none;
+}
+
+html {
+	margin: 0;
+	height: 100%;
+}
+
+body {
+	height: 100%;
+    font-size: 14px;
+	font-family: 'Arial', sans-serif;
+    color: #526271;
+	line-height: 24px;
+    padding: 0;
+    margin: 0;
+	position: relative;
+    overflow-x: hidden !important;
+    background: #fff;
+    -webkit-text-size-adjust: none;
+}
+
+header, nav, section, article, aside, figure, footer, main {
+	display: block;
+	padding: 0;
+	margin: 0;
+}
+
+/*tags*/
+
+a {
+	color: #4080ff;
+	text-decoration: underline;
+}
+
+a:hover {
+	text-decoration: none;
+}
+
+p {
+	padding: 0 0 20px 0;
+	margin: 0;
+}
+
+ul, ol {
+	padding: 0 0 20px 30px;
+	margin: 0;
+}
+
+img {
+	display: block;
+	border: none;
+}
+
+/*end tags*/
+
+/*titles*/
+
+h1 {
+	font-size: 56px;
+	color: #303e4a;
+	line-height: 56px;
+	letter-spacing: -1px;
+	padding: 0 0 15px;
+	margin: 0;
+}
+
+h2 {
+	font-size: 50px;
+	color: #303e4a;
+	line-height: 50px;
+	letter-spacing: -1px;
+	padding: 0 0 20px;
+	margin: 0;
+}
+
+h3 {
+	font-size: 32px;
+	color: #303e4a;
+	line-height: 32px;
+	letter-spacing: -1px;
+	padding: 0 0 20px;
+	margin: 0;
+}
+
+h4 {
+	font-size: 24px;
+	color: #303e4a;
+	line-height: 24px;
+	letter-spacing: -1px;
+	padding: 0 0 20px;
+	margin: 0;
+}
+
+h5 {
+    font-size: 20px;
+    line-height: 20px;
+    text-transform: uppercase;
+    padding: 0 0 20px;
+    margin: 0;
+}
+
+/*end titles*/
+
+/* form elements */
+
+input:focus, textarea:focus {
+	outline: none;
+	-webkit-appearance: none;
+}
+
+input[type="checkbox"] {
+	-webkit-appearance: checkbox;
+}
+
+input[type="radio"] {
+	-webkit-appearance: radio;
+}
+
+button::-moz-focus-inner,
+input::-moz-focus-inner {
+	border: 0;
+	padding: 0;
+}
+
+input, select {
+	vertical-align: middle;
+}
+
+select,
+textarea,
+input[type=tel],
+input[type=text],
+input[type=email],
+input[type=password],
+input[type=number] {
+	width: 100%;
+	height: 38px;
+	display: block;
+    font-family: 'Arial', sans-serif;
+	font-size: 14px;
+	color: #526271;
+	line-height: 36px;
+	outline: none;
+	padding: 0 15px;
+	margin: 0;
+	position: relative;
+	border: 1px solid #d8d8cf;
+	border-radius: 3px;
+	background: #fff;
+
+	-webkit-transition: all 0.2s;
+	-moz-transition: all 0.2s;
+	-o-transition: all 0.2s;
+	transition: all 0.2s;
+
+}
+
+textarea::-webkit-input-placeholder,
+input[type=tel]::-webkit-input-placeholder,
+input[type=text]::-webkit-input-placeholder,
+input[type=email]::-webkit-input-placeholder,
+input[type=password]::-webkit-input-placeholder,
+input[type=number]::-webkit-input-placeholder {
+	color: #b5bbc0;
+}
+
+textarea::-moz-placeholder,
+input[type=tel]::-moz-placeholder,
+input[type=text]::-moz-placeholder,
+input[type=email]::-moz-placeholder,
+input[type=password]::-moz-placeholder,
+input[type=number]::-moz-placeholder {
+	color: #b5bbc0;
+}
+
+textarea:-moz-placeholder,
+input[type=tel]:-moz-placeholder,
+input[type=text]:-moz-placeholder,
+input[type=email]:-moz-placeholder,
+input[type=password]:-moz-placeholder,
+input[type=number]:-moz-placeholder {
+	color: #b5bbc0;
+}
+
+textarea:-ms-input-placeholder,
+input[type=tel]:-ms-input-placeholder,
+input[type=text]:-ms-input-placeholder,
+input[type=email]:-ms-input-placeholder,
+input[type=password]:-ms-input-placeholder,
+input[type=number]:-ms-input-placeholder {
+	color: #b5bbc0;
+}
+
+select {
+	color: #526271;
+	padding: 0 15px;
+}
+
+select:focus,
+textarea:focus,
+input[type=tel]:focus,
+input[type=text]:focus,
+input[type=email]:focus,
+input[type=password]:focus,
+input[type=number]:focus {
+	margin: 0;
+	border: 1px solid #aaa;
+}
+
+button {
+	outline: none;
+}
+
+textarea {
+	height: 100px;
+	resize: vertical;
+}
+
+.form-holder {
+	padding: 0 0 5px;
+}
+
+/* end form elements */
+
+/*carousels*/
+
+.owl-carousel {
+	position: relative;
+}
+
+.owl-carousel .owl-wrapper {
+	position: relative;
+}
+
+.owl-carousel .owl-wrapper-outer {
+	position: relative;
+	overflow: hidden;
+}
+
+.owl-carousel .owl-wrapper-outer .owl-wrapper:after,
+.owl-carousel .owl-wrapper-outer .owl-wrapper:before {
+	display: table;
+	line-height: 0;
+	content: '';
+}
+
+.owl-carousel .owl-wrapper-outer .owl-wrapper:after {
+	clear: both;
+}
+
+.owl-carousel .owl-wrapper-outer .owl-wrapper .owl-item {
+	float: left;
+}
+
+.owl-carousel .owl-controls .owl-pagination {
+	text-align: center;
+	padding: 15px 0 0 0;
+}
+
+.owl-carousel .owl-controls .owl-pagination .owl-page {
+	width: 22px;
+	height: 22px;
+	display: inline-block;
+	cursor: pointer;
+	padding: 4px;
+	margin: 0 7px;
+	position: relative;
+	border: 2px solid #D4E8EF;
+
+	border-radius: 22px;
+
+}
+
+.owl-carousel .owl-controls .owl-pagination .owl-page span {
+	width: 100%;
+	height: 100%;
+	display: block;
+	position: relative;
+	background: #D4E8EF;
+
+	border-radius: 20px;
+
+}
+
+.owl-carousel .owl-controls .owl-pagination .owl-page.active {
+	border-color: #d73975;
+}
+
+.owl-carousel .owl-controls .owl-pagination .owl-page.active span {
+	background: #d73975;
+}
+
+.owl-carousel .owl-buttons {
+    width: 100%;
+    height: 40px;
+    position: absolute;
+    top: 50%; left: 0;
+    transform: translateY(-50%);
+}
+
+.owl-carousel .owl-buttons div {
+    width: 40px;
+    height: 40px;
+    cursor: pointer;
+    position: absolute;
+}
+
+.owl-carousel .owl-buttons .owl-prev {
+    left: 0;
+}
+
+.owl-carousel .owl-buttons .owl-next {
+    right: 0;
+}
+
+/*end carousels*/
+
+/*stylish select*/
+
+.stylish-select .SSContainerDivWrapper {
+	width: 100%;
+	height: auto !important;
+	max-height: 150px !important;
+	margin: 0;
+	padding:0;
+	position: absolute;
+	left: 0;
+	z-index: 17;
+	overflow-y: scroll;
+	border: 1px solid #CDCDCD;
+	border-radius: 3px;
+}
+
+.stylish-select ul.newList {
+	height: auto !important;
+	margin:0;
+	padding:0;
+	list-style:none;
+	color:#454545;
+	overflow:auto;
+	background:#fff;
+}
+
+.stylish-select ul.newList * {
+	margin:0;
+	padding:0;
+	position: relative;
+	z-index: 100;
+}
+
+.stylish-select ul.newList a {
+	font-size: 13px;
+	color: #454545;
+	text-decoration:none;
+	display:block;
+	padding:3px 10px;
+	cursor: pointer;
+}
+
+.stylish-select ul.newList li:last-child a {
+	border-bottom: 1px solid #e0e0e0;
+}
+
+.stylish-select ul.newList li a:focus {
+	-moz-outline-style: none;
+}
+
+.stylish-select .selectedTxt {
+	width: 100%;
+	height: 38px;
+	display: block;
+	font-size: 14px;
+	color: #526271;
+    line-height: 36px;
+	padding: 0 30px 0 15px;
+    margin: 0;
+    outline: none;
+    border: 1px solid #d8d8cf;
+	position: relative;
+	overflow:hidden;
+	cursor: pointer;
+
+	border-radius: 3px;
+
+}
+
+.stylish-select .hiLite,
+.stylish-select .newListHover {
+	background:#F6F7F9;
+}
+
+.stylish-select .newListDisabled {
+	opacity: 0.6;
+	-ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=60)";
+	filter: alpha(opacity=60);
+}
+
+.stylish-select .newListItemDisabled {
+	opacity: 0.6;
+	-ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=60)";
+	filter: alpha(opacity=60);
+}
+
+.stylish-select .newListOptionDisabled {
+	opacity: 0.6;
+	-ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=60)";
+	filter: alpha(opacity=60);
+}
+
+.stylish-select .newListOptionTitle {
+
+}
+
+.stylish-select .newListOptionTitle ul {
+	margin:3px 0 0;
+}
+
+.stylish-select .newListOptionTitle li {
+	font-weight:normal;
+}
+
+.small-select {
+	padding: 0 5px 0 0;
+}
+
+.small-select .newListSelected .selectedTxt {
+	width: 100px;
+}
+
+.small-select .newListSelected ul {
+	padding: 0 !important;
+}
+
+/*end stylish select*/
+
+/*buttons*/
+
+.button {
+	display: inline-block;
+    font-family: 'Arial', sans-serif;
+	font-weight: normal;
+	height: 80px;
+	font-size: 28px;
+	color: #fff;
+	line-height: 70px;
+	letter-spacing: -1px;
+	text-align: center;
+	text-decoration: none;
+	text-transform: uppercase;
+	cursor: pointer;
+	padding: 2px;
+	margin: 0;
+	position: relative;
+	overflow: hidden;
+	border: none;
+
+	background: #FFBD40;
+	background: -moz-linear-gradient(top, #FFBD40 0%, #EB7B30 100%);
+	background: -webkit-linear-gradient(top, #FFBD40 0%,#EB7B30 100%);
+	background: linear-gradient(to bottom, #FFBD40 0%,#EB7B30 100%);
+	border-radius: 40px;
+
+}
+
+/*end buttons*/
+
+/*global class*/
+
+.left {
+	float: left;
+}
+
+.right {
+	float: right;
+}
+
+.clearfix:before,
+.clearfix:after {
+	display: table;
+	line-height: 0;
+	content: '';
+}
+
+.clearfix:after {
+	clear: both;
+}
+
+.clear {
+	clear: both;
+}
+
+.inner-block {
+	width: 980px;
+	margin: auto;
+}
+
+/*global class*/
+
+/*header section*/
+
+.header-section {
+
+}
+
+/*end header section*/
+
+/*first section*/
+
+.first-section {
+    height: 959px;
+    position: relative;
+    overflow: hidden;
+    background: url("../images/sea-image.png") no-repeat 50% 0;
+}
+
+.animation-section {
+    width: 1600px;
+    height: 959px;
+    position: relative;
+    left: 50%;
+
+    transform: translateX(-50%);
+
+}
+
+.animation-section .small-ship {
+    width: 135px;
+    height: 79px;
+    position: absolute;
+    top: -79px; left: -265px;
+    background: url("../images/small-ship.png") no-repeat;
+}
+
+.animation-section .small-ship.move {
+    animation: small-ship-animate 12s linear;
+}
+
+.animation-section .big-ship {
+    width: 379px;
+    height: 277px;
+    position: absolute;
+    top: 0;
+    left: 34px;
+    z-index: 1;
+    background: url("../images/big-ship.png") no-repeat;
+
+    animation: big-ship-animate 40s linear infinite;
+
+}
+
+.animation-section .big-ship .container-box-1 {
+    width: 66px;
+    height: 57px;
+    position: absolute;
+    top: 15px; left: 27px;
+    opacity: 0;
+    background: url("../images/container-box-1.png") no-repeat;
+}
+
+.animation-section .big-ship .container-box-2 {
+    width: 197px;
+    height: 125px;
+    position: absolute;
+    top: 69px; left: 113px;
+    opacity: 0;
+    background: url("../images/container-box-2.png") no-repeat;
+}
+
+.animation-section .big-ship .container-box-3 {
+    width: 186px;
+    height: 117px;
+    position: absolute;
+    top: 59px; left: 113px;
+    opacity: 0;
+    background: url("../images/container-box-3.png") no-repeat;
+}
+
+.animation-section .big-ship.show .container-box-1,
+.animation-section .big-ship.show .container-box-2,
+.animation-section .big-ship.show .container-box-3 {
+    opacity: unset;
+}
+
+.animation-section .big-ship.show .container-box-1 {
+    animation: big-ship-container-box 3.3s linear;
+    animation-iteration-count: 1;
+}
+
+.animation-section .big-ship.show .container-box-2 {
+    animation: big-ship-container-box 7.3s linear;
+    animation-iteration-count: 1;
+}
+
+.animation-section .big-ship.show .container-box-3 {
+    animation: big-ship-container-box 11.3s linear;
+    animation-iteration-count: 1;
+}
+
+.animation-section .city {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0; left: 0;
+    background: url("../images/city-image.png") no-repeat right 0;
+}
+
+.animation-section .city .crane {
+    width: 270px;
+    height: 213px;
+    position: absolute;
+    top: 387px; right: 319px;
+}
+
+.animation-section .city .crane:before {
+    content: '';
+    width: 59px;
+    height: 181px;
+    display: block;
+    position: absolute;
+    top: 32px; left: 111px;
+    background: url("../images/crane-half.png") no-repeat;
+    background-size: 100% auto;
+}
+
+.animation-section .city .crane:after {
+    content: '';
+    width: 270px;
+    height: 213px;
+    display: block;
+    position: absolute;
+    z-index: 1;
+    background: url("../images/crane.png") no-repeat;
+    background-size: 100% auto;
+}
+
+.animation-section .city .crane .crane-mechanism {
+    width: 52px;
+    height: 69px;
+    position: absolute;
+    top: 131px; left: 38px;
+}
+
+.animation-section .city .crane .crane-mechanism.move {
+    animation: crane-mechanism-animate 4s linear infinite;
+    animation-iteration-count: 3;
+}
+
+.animation-section .city .crane .crane-mechanism:after {
+    content: '';
+    width: 100%;
+    height: 100%;
+    display: block;
+    position: absolute;
+    top: 0; left: 0;
+    background: url("../images/crane-mechanism.png") no-repeat 0 100%;
+    background-size: 100% auto;
+}
+
+.animation-section .city .crane .crane-mechanism.move .container-box {
+    width: 46px;
+    height: 41px;
+    position: absolute;
+    bottom: -10px; left: 3px;
+    opacity: 0;
+    background: url("../images/container.png") no-repeat;
+    background-size: 100% auto;
+
+    animation: container-box 4s linear infinite;
+    animation-iteration-count: 3;
+
+}
+
+@keyframes small-ship-animate {
+    0%   {top: -79px; left: -265px;}
+    100% {top: 960px; left: 1200px;}
+}
+
+@keyframes big-ship-animate {
+    0%   {top: -277px; left: -450px;}
+    48%  {top: 480px; left: 815px;}
+    80%  {top: 480px; left: 815px;}
+    100% {top: 960px; left: calc(100% + 50px);}
+}
+
+@keyframes big-ship-container-box {
+    0%   {opacity: 0}
+    99%   {opacity: 0}
+    100% {opacity: 1;}
+}
+
+@keyframes crane-mechanism-animate {
+    0%   {height: 69px; top: 131px; left: 38px;}
+    20%  {height: 69px; top: 20px; left: 207px;}
+    30%  {height: 110px; top: 20px; left: 207px;}
+    50%  {height: 69px; top: 20px; left: 207px;}
+    70%  {height: 69px; top: 131px; left: 38px;}
+    80%  {height: 90px; top: 131px; left: 38px;}
+    100% {height: 69px; top: 131px; left: 38px;}
+}
+
+@keyframes container-box {
+    0%   {opacity: 0}
+    20%  {opacity: 0}
+    30%  {opacity: 0}
+    31%  {opacity: 0}
+    32%  {opacity: 1;}
+    50%  {opacity: 1;}
+    75%  {opacity: 1;}
+    79%  {opacity: 1;}
+    80%  {opacity: 0;}
+    100% {opacity: 0;}
+}
+
+/*end first section*/
+
+/*second section*/
+
+.second-section {
+    height: 1000px;
+    position: relative;
+    overflow: hidden;
+}
+
+.animation-section-2 {
+    position: absolute;
+    top: 250px;
+}
+
+.animation-section-2 .road-box {
+    position: absolute;
+
+    -ms-transform: rotate(30deg);
+    -webkit-transform: rotate(30deg);
+    transform: rotate(30deg);
+
+}
+
+.animation-section-2 .road-box .road {
+    width: 32000px;
+    height: 730px;
+    position: absolute;
+    top: 0; left: 0;
+    z-index: 1;
+    background: url("../images/second-section-road.jpg") repeat-x;
+
+    animation: road 60s linear infinite;
+
+}
+
+.animation-section-2 .road-box .trees {
+    width: 32000px;
+    height: 730px;
+    position: absolute;
+    top: -115px; left: 0;
+    z-index: 2;
+    background: url("../images/second-section-trees.png") repeat-x;
+
+    animation: road 60s linear infinite;
+
+}
+
+.animation-section-2 .road-box .sky {
+    width: 32000px;
+    height: 730px;
+    position: absolute;
+    top: -355px; left: 0;
+    z-index: 3;
+    background: url("../images/second-section-sky.png") repeat-x;
+
+    animation: road 60s linear infinite;
+
+}
+
+.animation-section-2 .car {
+    width: 246px;
+    height: 209px;
+    position: absolute;
+    top: 135px; left: 215px;
+    z-index: 1;
+    background: url("../images/second-section-car.png") no-repeat;
+
+    animation: car 4s linear infinite;
+    transform: rotate(-30deg);
+
+}
+
+.animation-section-2 .car.move {
+    animation: car-on-road 5s linear infinite;
+}
+
+.animation-section-2 .plane {
+    width: 338px;
+    height: 245px;
+    position: absolute;
+    top: -330px; left: -488px;
+    opacity: 0;
+    z-index: 2;
+    background: url("../images/second-section-plane.png") no-repeat;
+
+    animation: plane-fly 4s linear;
+    animation-delay: 3s;
+
+}
+
+.animation-section-2 .plane.fly {
+    top: -300px; left: 400px;
+    opacity: 1;
+    transform: rotate(-30deg);
+}
+
+.animation-section-2 .plane-shadow {
+    width: 117px;
+    height: 71px;
+    position: absolute;
+    top: 565px; left: 62px;
+    opacity: 0;
+    background: url("../images/second-section-plane-shadow.png") no-repeat;
+
+    animation: plane-shadow 3.5s linear;
+    animation-delay: 3.5s;
+
+}
+
+.animation-section-2 .plane-shadow.move {
+    top: 565px; left: 62px;
+    opacity: 1;
+}
+
+@keyframes road {
+    100% {transform: translateX(-30000px)}
+}
+
+@keyframes car {
+    0%   {top: 120px; left: -246px; opacity: 0;}
+    1%   {opacity: 1;}
+    100% {top: 135px; left: 215px; opacity: 1;}
+}
+
+@keyframes car-on-road {
+    0%   {transform: translate(1px, 2px) rotate(-30deg)}
+    50%  {transform: translate(10px, -10px) rotate(-30deg)}
+    100% {transform: translate(1px, 2px) rotate(-30deg)}
+}
+
+@keyframes plane-fly {
+    0%   {top: -300px; left: -488px; opacity: 0; transform: rotate(-30deg);}
+    1%   {opacity: 1; transform: rotate(-30deg);}
+    100% {top: -300px; left: 400px; opacity: 1; transform: rotate(-30deg);}
+}
+
+@keyframes plane-shadow {
+    0%   {top: 460px; left: -117px; opacity: 0;}
+    1%   {opacity: 1;}
+    100% {top: 565px; left: 62px; opacity: 1;}
+}
+
+/*end second section*/
+
+/*footer section*/
+
+.footer-section {
+    font-size: 12px;
+    color: #a8b4b7;
+    line-height: 18px;
+    padding: 75px 0;
+    background: #fff;
+}
+
+/*end footer section*/
