@@ -60,7 +60,7 @@
     "popper.js": "^1.14.6",
     "precss": "^4.0.0",
     "pretty-checkbox": "^3.0.3",
-    "pug": "^2.0.3",
+    "pug": "^3.0.1",
     "pug-loader": "^2.4.0",
     "simplebar": "^4.0.0",
     "slick-carousel": "^1.8.1",
